@@ -12,10 +12,10 @@ This flutter package will help you create **backdrop modal route** or **non stic
 
 This package was created as a need for our in-production app, as there is no single solution which gives you a route enabled bottom-sheet or backdrop which is route enabled and a new page with an actual backdrop unlike material design.
 
-![Stateless Backdrop](./screenshots/example1.gif)
-![Stateful Backdrop](./screenshots/example2.gif)
-![Inline Backdrop](./screenshots/example3.gif)
-![Custom/Single Purpose Backdrop](./screenshots/example4.gif)
+<img src="./screenshots/example1.gif" width="220" height="440" />
+<img src="./screenshots/example2.gif" width="220" height="440" />
+<img src="./screenshots/example3.gif" width="220" height="440" />
+<img src="./screenshots/example4.gif" width="220" height="440" />
 
 ## Getting Started
 Add the dependency `backdrop_modal_route: ^0.1.0` to your project and start using **Backdrop Modal Route** everywhere:
@@ -57,7 +57,7 @@ await Navigator.push(
     );
 ```
 
-For more details have a look at the other [examples](./example/readme.md).
+For more details have a look at the other [examples](https://github.com/hey24sheep/backdrop_modal_route/tree/master/example).
 
 ## Properties
 | Property                         | Type          | Default                           |
