@@ -1,4 +1,7 @@
 # Backdrop Modal Route
+[![pub package](https://img.shields.io/pub/v/backdrop_modal_route.svg)](https://pub.dartlang.org/packages/backdrop_modal_route)
+[![GitHub Stars](https://img.shields.io/github/stars/hey24sheep/backdrop_modal_route.svg?logo=github)](https://github.com/hey24sheep/backdrop_modal_route)
+[![Platform](https://img.shields.io/badge/platform-android%20|%20ios-green.svg)](https://img.shields.io/badge/platform-Android%20%7C%20iOS-green.svg)
 
 **Get best of both worlds, backdrop with actual backdrop unlike material design and non sticky bottom sheet**
 
