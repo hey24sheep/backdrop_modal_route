@@ -62,23 +62,54 @@ await Navigator.push(
     );
 ```
 
+### Creating custom block modal transitions
+
+```dart
+// NOTE : only for on UIBlock.block as this uses Modal Barrier
+// widget block is inline widget replacement with loader widget
+
+// ... more code
+customBuildBlockModalTransitions:
+    (context, animation, secondaryAnimation, child) {
+    return RotationTransition(
+        turns: animation,
+        child: child,
+    );
+},
+// ... more code
+
+```
+
 For more details have a look at the other [examples](https://github.com/hey24sheep/backdrop_modal_route/tree/master/example).
 
 ## Properties
-| Property                         | Type          | Default                           |
-| ------------------------         |:-------------:| -----:                            |
-| DEFAULT_BACKDROP_TOP_PADDING     | double        | 56.0                              |
-| overlayContentBuilder (required) | Function      | you implement it                  |
-| backgroundColor                  | Color         | White                             |
-| topPadding                       | double        | 56.0                              |
-| barrierOpacity                   | double        | 0.5                               |
-| transitionDurationVal            | Duration      | milliseconds:500                  |
-| isOpaque                         | boolean       | false                             |
-| canBarrierDismiss                | boolean       | true                              |
-| barrierColorVal                  | Color         | black.withOpacity(barrierOpacity) |
-| barrierLabelVal                  | String        | null                              |
-| shouldMaintainState              | bool          | true                              |
-| backdropShape                    | ShapeBorder   | RoundedRectangleBorder            |
+| Property                          | Type         | Default                           |                                                           Note |
+| ------------------------          |:------------:| --------------------------------: | -------------------------------------------------------------: |
+| DEFAULT_BACKDROP_TOP_PADDING      | double       | 56.0                              |                                                                |
+| overlayContentBuilder (required)  | Function     | you implement it                  |                                                                |
+| backgroundColor                   | Color        | White                             |                                                                |
+| topPadding                        | double       | 56.0                              |                                                                |
+| barrierOpacity                    | double       | 0.5                               |                                                                |
+| transitionDurationVal             | Duration     | milliseconds:500                  |                                                                |
+| isOpaque                          | boolean      | false                             |                                                                |
+| canBarrierDismiss                 | boolean      | true                              |                                                                |
+| barrierColorVal                   | Color        | black.withOpacity(barrierOpacity) |                                                                |
+| barrierLabelVal                   | String       | null                              |                                                                |
+| shouldMaintainState               | bool         | true                              |                                                                |
+| backdropShape                     | ShapeBorder  | RoundedRectangleBorder            |                                                                |
+| safeAreaLeft                      |     bool     |            true                   |                     Set as 'false' to disable 'Left' Safe Area |
+| safeAreaTop                       |     bool     |            true                   | Set as 'false' to disable 'Top' (usually status bar) Safe Area |
+| safeAreaRight                     |     bool     |            true                   |                    Set as 'false' to disable 'Right' Safe Area |
+| safeAreaBottom                    |     bool     |            true                   |                   Set as 'false' to disable 'Bottom' Safe Area |
+| safeAreaMinimumPadding            |  EdgeInsets  | topPadding                        | 'topPadding' is used to set this. Default 56.0.                |
+| safeAreaMaintainBottomViewPadding |     bool     |           false                   |                                                                |
+| isSlideTransitionDefault          |     bool     |           true                    | Toggle between slide or fade transition                        |
+| buildBlockModalTransitions        |   Function   |               -                   | Use this to create custom transition other than fade/slide     |
+
+## FAQ
+Q. How to hide content using scroll ?</br>
+A. You have to implement it yourself and you could add it as parent of OverlayContent.
+   Check this [#1](https://github.com/hey24sheep/backdrop_modal_route/issues/1)
 
 ## Improve
 
