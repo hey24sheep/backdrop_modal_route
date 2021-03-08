@@ -37,13 +37,13 @@ class CustomBackdropModalRoute extends BackdropModalRouteBase<List<String>> {
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
-                FlatButton(
+                TextButton(
                   onPressed: () {
                     Navigator.pop(context, ['Random Data', 'Foo', 'Bar']);
                   },
                   child: Text('Close with data'),
                 ),
-                FlatButton(
+                TextButton(
                   onPressed: () {
                     Navigator.pop(context);
                   },

@@ -209,8 +209,7 @@ class BackdropModalRoute<T> extends BackdropModalRouteBase<T> {
     bool? safeAreaMaintainBottomViewPadding,
     bool isSlideTransitionDefault = true,
     BuildBlockModalTransitions? customBuildBlockModalTransitions,
-  })  : assert(overlayContentBuilder != null),
-        super(
+  }) : super(
           backgroundColor: backgroundColor,
           topPadding: topPadding,
           barrierOpacity: barrierOpacity,

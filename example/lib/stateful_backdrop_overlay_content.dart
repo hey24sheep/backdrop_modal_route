@@ -40,7 +40,7 @@ class _CounterContentStatefulState extends State<CounterContentStateful> {
           ),
           Padding(
             padding: const EdgeInsets.only(top: 12),
-            child: FlatButton(
+            child: TextButton(
               onPressed: _incrementCounter,
               child: Text('Increment'),
             ),
@@ -51,13 +51,13 @@ class _CounterContentStatefulState extends State<CounterContentStateful> {
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
-                FlatButton(
+                TextButton(
                   onPressed: () {
                     Navigator.pop(context, _counter);
                   },
                   child: Text('Close with data'),
                 ),
-                FlatButton(
+                TextButton(
                   onPressed: () {
                     Navigator.pop(context);
                   },

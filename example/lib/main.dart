@@ -17,6 +17,11 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
+        textButtonTheme: TextButtonThemeData(
+          style: ButtonStyle(
+            foregroundColor: MaterialStateProperty.all(Colors.black),
+          ),
+        ),
       ),
       home: MyHomePage(),
     );
@@ -57,7 +62,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   children: <Widget>[
                     // stateless default
                     Container(
-                      child: FlatButton(
+                      child: TextButton(
                         child: Text(
                           "Default Backdrop (Stateless) \n (String Return)",
                           textAlign: TextAlign.center,
@@ -70,7 +75,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
                     // stateful default
                     Container(
-                      child: FlatButton(
+                      child: TextButton(
                         child: Text(
                           "Default Backdrop (Stateful) \n (Int Return)",
                           textAlign: TextAlign.center,
@@ -83,7 +88,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
                     // customized
                     Container(
-                      child: FlatButton(
+                      child: TextButton(
                         child: Text(
                           "Inline Customized Default Backdrop \n (Void Return)",
                           textAlign: TextAlign.center,
@@ -95,7 +100,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
                     // custom/single purpose extended from base
                     Container(
-                      child: FlatButton(
+                      child: TextButton(
                         child: Text(
                           "Custom/Single purpose backdrop modal route extended from base",
                           textAlign: TextAlign.center,
@@ -160,7 +165,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   padding: const EdgeInsets.all(8.0),
                   child: Text('Barrier Dismiss Disabled'),
                 ),
-                RaisedButton(
+                ElevatedButton(
                   onPressed: () => Navigator.pop(context),
                   child: Text('Close'),
                 ),
