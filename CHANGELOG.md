@@ -1,3 +1,8 @@
+## [2.0.0] - 08 March 2021
+* Stable release for null safety
+* Example updated to null safety
+* Update SDK constraints to >=2.12.0-0 <3.0.0 based on guidelines
+
 ## [1.1.0] - 24 December 2020
 
 * Added fade transition to block modal
