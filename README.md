@@ -23,7 +23,7 @@ This package was created as a need for our in-production app, as there is no sin
 </p>
 
 ## Getting Started
-Add the dependency `backdrop_modal_route: ^0.1.0` to your project and start using **Backdrop Modal Route** everywhere:
+Add the dependency `backdrop_modal_route: ^2.0.0` to your project and start using **Backdrop Modal Route** everywhere:
 ```dart
 import 'package:backdrop_modal_route/backdrop_modal_route.dart';
 ```
