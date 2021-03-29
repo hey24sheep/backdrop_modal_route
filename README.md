@@ -3,6 +3,11 @@
 [![GitHub Stars](https://img.shields.io/github/stars/hey24sheep/backdrop_modal_route.svg?logo=github)](https://github.com/hey24sheep/backdrop_modal_route)
 [![Platform](https://img.shields.io/badge/platform-android%20|%20ios-green.svg)](https://img.shields.io/badge/platform-Android%20%7C%20iOS-green.svg)
 
+<p>
+<a href="https://www.buymeacoffee.com/hey24sheep" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174">
+</a>
+</p>
+
 **Get best of both worlds, backdrop with actual backdrop unlike material design and non sticky bottom sheet**
 
 This flutter package will help you create **backdrop modal route** or **non sticky bottom sheet** with **minimal code and efforts with dynamic content**. 
