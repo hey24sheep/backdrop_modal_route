@@ -1,4 +1,4 @@
-## [2.0.0] - 06 August 2021
+## [2.0.1] - 06 August 2021
 * Updated docs
 
 ## [2.0.0] - 08 March 2021
