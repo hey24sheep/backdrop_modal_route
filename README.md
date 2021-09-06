@@ -89,9 +89,6 @@ await Navigator.push(
 ### Creating custom block modal transitions
 
 ```dart
-// NOTE : only for on UIBlock.block as this uses Modal Barrier
-// widget block is inline widget replacement with loader widget
-
 // ... more code
 customBuildBlockModalTransitions:
     (context, animation, secondaryAnimation, child) {
