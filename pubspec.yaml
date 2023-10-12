@@ -1,11 +1,11 @@
 name: backdrop_modal_route
 description: A flutter plugin to open backdrop modal route with minimal code and efforts with dynamic content.
-version: 2.0.2
+version: 2.0.3
 homepage: https://github.com/hey24sheep/backdrop_modal_route.git
 documentation: https://github.com/hey24sheep/backdrop_modal_route
 
 environment:
-  sdk: '>=2.12.0 <3.0.0'
+  sdk: '>=2.12.0 <4.0.0'
 
 dependencies:
   flutter:
