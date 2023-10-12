@@ -1,4 +1,4 @@
-## [2.0.3] - 06 August 2021
+## [2.0.3] - 12 Oct 2023
 * `pubspec.yaml` updated `sdk constraint`
 * Updated support link in Readme
 * Version bump
